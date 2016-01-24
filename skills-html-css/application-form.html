@@ -1,0 +1,30 @@
+<!doctype html> <!-- 30 minutes -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link href="styles.css" rel="stylesheet">
+        <title>Skills-HTML-CSS</title>
+    </head>
+    <body>
+        <!-- your html goes here -->
+        <h1>Application Form</h1>
+        <p>Hello, we are glad to see you here. There are few steps for you to complete before we process your application.</p>
+        <form action="/application" method="POST">
+            <fieldset>
+                <legend>Please enter some information to the form</legend>
+            <label>First Name: <input class="color-yellow" type="text" name="FirstName" value="Steve"></label>
+            <label>Last Name: <input id="input-bold" class="color-yellow" type="text" name="LastName" value="Jobs"></label> <br>
+            <label>Desired salary: <input  class="color-yellow" type="text" name="Salary" value="$"></label> <br>
+            <label>Which job you are applying for: 
+                <select class="color-yellow" name="job" value="job">
+                    <option value="sde">Software Engineer</option>
+                    <option value="qa">QA Engineer</option>
+                    <option value="pm">Product Manager</option>
+                </select>
+            </label><br>
+            <input class="color-yellow" type="submit" value="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>

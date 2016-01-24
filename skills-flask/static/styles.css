@@ -1,0 +1,10 @@
+.color-yellow {
+    background-color: #ffffcc;
+}
+#input-bold {
+    font-weight: bold;
+}
+p {
+    border: 1px;
+    border-radius: 0.5px
+}

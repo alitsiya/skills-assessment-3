@@ -1,0 +1,34 @@
+{% extends 'base.html' %} 
+{% block title %}Application Form{% endblock %}
+{% block body %}
+
+<h1>Application Form</h1>
+<p>Hello, we are glad to see you here. There are few steps for you to complete
+ before we process your application.
+</p>
+<form action="/application-response" method="POST">
+    <fieldset>
+        <legend>Please enter some information to the form</legend>
+        <label>First Name:
+            <input class="color-yellow" type="text" name="FirstName" value="Steve">
+        </label>
+        <label>Last Name:
+            <input id="input-bold" class="color-yellow" type="text" name="LastName" value="Jobs">
+        </label>
+        <br>
+        <label>Desired salary:
+            <input class="color-yellow" type="text" name="Salary" value="$">
+        </label>
+        <br>
+        <label>Which job you are applying for:
+            <select class="color-yellow" name="job" value="job">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="QA Engineer">QA Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+            </select>
+        </label>
+        <br>
+        <input class="color-yellow" type="submit" value="submit">
+    </fieldset>
+</form>
+{% endblock %}
